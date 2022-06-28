@@ -14,14 +14,14 @@ public class partaiperindo {
 			headers("Content-Type", "application/x-www-form-urlencoded").
 			accept(ContentType.JSON)
 		.params("number", "081223257356")
-		.params("password", "ric123")
+		.params("password", "ric12345")
 		.when().
 			post("https://api.partaiperindo.com/auth/login")
 		.then().
 			log().all().
 			statusCode(201)
 			.extract().response();
-		
+		//test
 	}
 	
 	
