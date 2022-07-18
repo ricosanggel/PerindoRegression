@@ -27,18 +27,15 @@ public static WebDriver driver;
 		
 		//OS Windows
 		if(OS.contains("Windows"))
-		{
-			System.setProperty("webdriver.chrome.driver", "C:\\jenkins\\chromedriver.exe");
+			{System.setProperty("webdriver.chrome.driver", "C:\\jenkins\\chromedriver.exe");
+		}else
+			{System.setProperty("webdriver.chrome.driver", "C:\\Users\\ProBook\\git\\Automation-Regression-Perindo\\partaiperindo\\driver\\chromedriver.exe");
 		}
-			else
-		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\ProBook\\git\\Automation-Regression-Perindo\\partaiperindo\\driver\\chromedriver.exe");
-		}
+		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
 		driver = new ChromeDriver(options);
-		
-		
+			
 	}
 		
 	

@@ -1,9 +1,11 @@
 package PPProd;
 
 
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 
 public class partaiperindo {
 	
@@ -158,8 +160,34 @@ public class partaiperindo {
 			.statusCode(404)
 		.log().all();
 	}
-	
-		
+	@Test (priority=13, description ="TC 13 Get-Member")
+	public static void getmember() throws InterruptedException {
+		Response response = (Response) 
+		given()
+		.headers("Content-Type", "application/x-www-form-urlencoded")
+					.accept(ContentType.JSON)
+				.params("number", "081315402385")
+				.params("password", "Arshad652018")
+				.when().
+					post("https://api.partaiperindo.com/auth/login")
+				.then().
+					log().all()
+					.extract().response();
+					String jsonString = response.asString();
+					AssertJUnit.assertTrue(jsonString.contains("token"));
+			        //This token will be used in later requests
+					String token = response.jsonPath().getString("token");  
+				
+					Thread.sleep(1000);
+			    given()
+			    .header("authorization", "Bearer " + token)
+				.header("Content-Type", "application/json")
+				.when()
+					.get("https://api.partaiperindo.com/member/profile")
+				.then()
+					.log().all()
+					.statusCode(200);
+	}	
 }
 	
 
