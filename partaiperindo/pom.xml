@@ -85,7 +85,6 @@
     	<configuration>
     		 <suiteXmlFiles>
     		 	<suiteXmlFile>Testng.xml</suiteXmlFile>
-    		 	<suiteXmlFile>Testng2.xml</suiteXmlFile>
     		 </suiteXmlFiles>
     	</configuration>
  		</plugin>

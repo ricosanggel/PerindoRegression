@@ -3,8 +3,6 @@ package PPProd;
 
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-import org.yaml.snakeyaml.scanner.Constant;
-
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -26,7 +24,7 @@ public class partaiperindo {
 			log().all().
 			statusCode(201)
 			.extract().response();
-		//test
+		
 	}
 	
 	
@@ -214,7 +212,7 @@ public class partaiperindo {
 			.statusCode(200)
 		.log().all();
 	}
-	//trigger changes
+	
 }
 	
 

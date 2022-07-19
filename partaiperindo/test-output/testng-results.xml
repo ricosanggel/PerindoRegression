@@ -2,15 +2,15 @@
 <testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-19T14:01:21 WIB" name="Default suite" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1805">
+  <suite started-at="2022-07-19T17:01:28 WIB" name="Default suite" finished-at="2022-07-19T17:01:30 WIB" duration-ms="2001">
     <groups>
     </groups>
-    <test started-at="2022-07-19T14:01:21 WIB" name="Default test" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1805">
+    <test started-at="2022-07-19T17:01:28 WIB" name="Default test" finished-at="2022-07-19T17:01:30 WIB" duration-ms="2001">
       <class name="PPProd.partaiperindo">
-        <test-method signature="listgallery()[pri:15, instance:PPProd.partaiperindo@6973b51b]" started-at="2022-07-19T14:01:21 WIB" name="listgallery" description="TC 14 Get List all gallery" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1772" status="PASS">
+        <test-method signature="success_login_nonadmin()[pri:0, instance:PPProd.partaiperindo@6973b51b]" started-at="2022-07-19T17:01:28 WIB" name="success_login_nonadmin" description="TC 1 Login" finished-at="2022-07-19T17:01:30 WIB" duration-ms="1963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- listgallery -->
+        </test-method> <!-- success_login_nonadmin -->
       </class> <!-- PPProd.partaiperindo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

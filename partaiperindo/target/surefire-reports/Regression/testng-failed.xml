@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="RegressionPPAPI(failed)" verbose="0">
+    <classes>
+      <class name="PPProd.partaiperindo">
+        <methods>
+          <include name="search"/>
+        </methods>
+      </class> <!-- PPProd.partaiperindo -->
+    </classes>
+  </test> <!-- RegressionPPAPI(failed) -->
+</suite> <!-- Failed suite [Regression] -->

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 14.052 s <<< FAILURE! - in TestSuite
+PPProd.partaiperindoUI.setUpTest  Time elapsed: 0.262 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\jenkins\chromedriver.exe
+	at PPProd.partaiperindoUI.setUpTest(partaiperindoUI.java:38)
+
