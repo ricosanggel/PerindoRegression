@@ -3,9 +3,12 @@ package PPProd;
 
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
+import org.yaml.snakeyaml.scanner.Constant;
+
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import Utility.*;
 
 public class partaiperindo {
 	
@@ -15,10 +18,10 @@ public class partaiperindo {
 		given().
 			headers("Content-Type", "application/x-www-form-urlencoded").
 			accept(ContentType.JSON)
-		.params("number", "081223257356")
-		.params("password", "ric123")
+		.params("number", constant.mobilenumber1 )
+		.params("password", constant.password1)
 		.when().
-			post("https://api.partaiperindo.com/auth/login")
+			post(constant.URLProdLogin)
 		.then().
 			log().all().
 			statusCode(201)
@@ -35,7 +38,7 @@ public class partaiperindo {
 			.params("number", "6281223257359")
 			.params("password", "eqweq")
 			.when().
-				post("https://api.partaiperindo.com/auth/login")
+				post(constant.URLProdLogin)
 			.then()  
 				.statusCode(401)
 			.log().all();
@@ -48,7 +51,7 @@ public class partaiperindo {
 		.params("number", "6281223")
 		.params("password", "")
 		.when().
-			post("https://api.partaiperindo.com/auth/login")
+			post(constant.URLProdLogin)
 		.then()  
 			.statusCode(400)
 		.log().all();
@@ -60,7 +63,7 @@ public class partaiperindo {
 		.headers("Content-Type", "application/json")
 		.params("number", "081223257356")
 		.when()
-			.get("https://api.partaiperindo.com/auth/forgotpassword")
+			.get(constant.URLProdForgotPass)
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -75,7 +78,7 @@ public class partaiperindo {
 		.headers("Content-Type", "application/json")
 		.params("number", "081382648636")
 		.when()
-			.get("https://api.partaiperindo.com/auth/otp")
+			.get(constant.URLProdOTP)
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -89,7 +92,7 @@ public class partaiperindo {
 		.params("page", "1")
 		.params("limit", "10")
 		.when()
-			.get("https://api.partaiperindo.com/content/search")
+			.get(constant.URLProdSearch)
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -160,16 +163,17 @@ public class partaiperindo {
 			.statusCode(404)
 		.log().all();
 	}
+	
 	@Test (priority=13, description ="TC 13 Get-Member")
 	public static void getmember() throws InterruptedException {
 		Response response = (Response) 
 		given()
 		.headers("Content-Type", "application/x-www-form-urlencoded")
 					.accept(ContentType.JSON)
-				.params("number", "081315402385")
-				.params("password", "Arshad652018")
+				.params("number", constant.mobilenumber2)
+				.params("password", constant.password2)
 				.when().
-					post("https://api.partaiperindo.com/auth/login")
+					post(constant.URLProdLogin)
 				.then().
 					log().all()
 					.extract().response();
@@ -188,6 +192,29 @@ public class partaiperindo {
 					.log().all()
 					.statusCode(200);
 	}	
+	@Test (priority=14, description ="TC 14 Get List all Aspirasi")	
+	public void listaspirasi() {
+		given()
+		.headers("Content-Type", "application/json")
+		.params("cache", "true")
+		.when()
+			.get("https://api.partaiperindo.com/content/listaspirasiperindo")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	@Test (priority=15, description ="TC 15 Get List all gallery")	
+	public void listgallery() {
+		given()
+		.headers("Content-Type", "application/json")
+		.params("cache", "true")
+		.when()
+			.get("https://api.partaiperindo.com/content/listgallery")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	
 }
 	
 

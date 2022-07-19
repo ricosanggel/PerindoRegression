@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="13" passed="1" failed="0" skipped="0">
+<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T18:26:08 WIB" name="Default suite" finished-at="2022-07-18T18:26:12 WIB" duration-ms="3603">
+  <suite started-at="2022-07-19T14:01:21 WIB" name="Default suite" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1805">
     <groups>
     </groups>
-    <test started-at="2022-07-18T18:26:08 WIB" name="Default test" finished-at="2022-07-18T18:26:12 WIB" duration-ms="3603">
+    <test started-at="2022-07-19T14:01:21 WIB" name="Default test" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1805">
       <class name="PPProd.partaiperindo">
-        <test-method signature="getmember()[pri:13, instance:PPProd.partaiperindo@72057ecf]" started-at="2022-07-18T18:26:08 WIB" name="getmember" description="TC 13 Get-Member" finished-at="2022-07-18T18:26:12 WIB" duration-ms="3572" status="PASS">
+        <test-method signature="listgallery()[pri:15, instance:PPProd.partaiperindo@6973b51b]" started-at="2022-07-19T14:01:21 WIB" name="listgallery" description="TC 14 Get List all gallery" finished-at="2022-07-19T14:01:23 WIB" duration-ms="1772" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getmember -->
+        </test-method> <!-- listgallery -->
       </class> <!-- PPProd.partaiperindo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

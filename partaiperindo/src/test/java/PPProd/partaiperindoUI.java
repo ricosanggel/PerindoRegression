@@ -18,6 +18,7 @@ import pagesobject.*;
 
 public class partaiperindoUI {
 
+
 public static WebDriver driver;
 	
 	@BeforeTest
