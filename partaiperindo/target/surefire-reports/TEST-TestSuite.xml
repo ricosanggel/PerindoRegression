@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.052" tests="20" errors="0" skipped="4" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="38.461" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
-    <property name="webdriver.chrome.driver" value="C:\jenkins\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\ProBook\git\Automation-Regression-Perindo\partaiperindo\target\test-classes;C:\Users\ProBook\git\Automation-Regression-Perindo\partaiperindo\target\classes;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\ProBook\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ProBook\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ProBook\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ProBook\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\ProBook\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\ProBook\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\ProBook\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\ProBook\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ProBook\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\ProBook\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\ProBook\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ProBook\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\ProBook\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\ProBook\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\ProBook\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ProBook\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\ProBook\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\ProBook\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\ProBook\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\ProBook\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\ProBook\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ProBook\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\ProBook\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ProBook\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ProBook\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ProBook\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\json-path\4.5.0\json-path-4.5.0.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\rest-assured-common\4.5.0\rest-assured-common-4.5.0.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\xml-path\4.5.0\xml-path-4.5.0.jar;C:\Users\ProBook\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ProBook\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\ProBook\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\ProBook\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\ProBook\.m2\repository\org\awaitility\awaitility\3.0.0\awaitility-3.0.0.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\ProBook\.m2\repository\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;"/>
@@ -16,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\ProBook\AppData\Local\Temp\surefire4307033507004412865\surefirebooter12908713023814052929.jar C:\Users\ProBook\AppData\Local\Temp\surefire4307033507004412865 2022-07-19T17-13-47_958-jvmRun1 surefire156348545207491643tmp surefire_09613563286777885912tmp"/>
+    <property name="sun.java.command" value="C:\Users\ProBook\AppData\Local\Temp\surefire15035667298842650372\surefirebooter7569282313500792387.jar C:\Users\ProBook\AppData\Local\Temp\surefire15035667298842650372 2022-07-19T17-24-12_808-jvmRun1 surefire15323102330927792992tmp surefire_014784915467645915587tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ProBook\git\Automation-Regression-Perindo\partaiperindo\target\test-classes;C:\Users\ProBook\git\Automation-Regression-Perindo\partaiperindo\target\classes;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\ProBook\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\ProBook\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ProBook\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ProBook\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ProBook\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\ProBook\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\ProBook\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\ProBook\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\ProBook\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\ProBook\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\ProBook\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ProBook\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\ProBook\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\ProBook\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\ProBook\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ProBook\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\ProBook\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\ProBook\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\ProBook\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\ProBook\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ProBook\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\ProBook\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\ProBook\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\ProBook\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\ProBook\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\ProBook\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ProBook\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\ProBook\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ProBook\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ProBook\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ProBook\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ProBook\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\json-path\4.5.0\json-path-4.5.0.jar;C:\Users\ProBook\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\rest-assured-common\4.5.0\rest-assured-common-4.5.0.jar;C:\Users\ProBook\.m2\repository\io\rest-assured\xml-path\4.5.0\xml-path-4.5.0.jar;C:\Users\ProBook\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ProBook\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\ProBook\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\ProBook\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\ProBook\.m2\repository\org\awaitility\awaitility\3.0.0\awaitility-3.0.0.jar;C:\Users\ProBook\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\ProBook\.m2\repository\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ProBook\AppData\Local\Temp\surefire4307033507004412865\surefirebooter12908713023814052929.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ProBook\AppData\Local\Temp\surefire15035667298842650372\surefirebooter7569282313500792387.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
@@ -56,9 +55,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="success_login_nonadmin" classname="PPProd.partaiperindo" time="2.227">
+  <testcase name="success_login_nonadmin" classname="PPProd.partaiperindo" time="2.019">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Tue, 19 Jul 2022 10:13:50 GMT
+Date: Tue, 19 Jul 2022 10:24:15 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 136
 Connection: keep-alive
@@ -68,19 +67,19 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2afd09b4187b3-SIN
+CF-RAY: 72d2bf107d274643-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "phone_number": "+6281223257356",
-    "token": "6P-6hP6VZgFYQuQgMHGlGbyF8HBFT1JgTyemHapyg4k=",
-    "expired_datetime": "2022-07-20T17:13:35+07:00"
+    "token": "qbNnp-b7sVyhj1obA87Zr3YIhLUPDhEkK3uIjLTLo0o=",
+    "expired_datetime": "2022-07-20T17:23:59+07:00"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="failed_login_invalidpassword" classname="PPProd.partaiperindo" time="0.142">
+  <testcase name="failed_login_invalidpassword" classname="PPProd.partaiperindo" time="0.211">
     <system-out><![CDATA[HTTP/1.1 401 Unauthorized
-Date: Tue, 19 Jul 2022 10:13:51 GMT
+Date: Tue, 19 Jul 2022 10:24:15 GMT
 Content-Type: text/plain; charset=UTF-8
 Content-Length: 62
 Connection: keep-alive
@@ -90,15 +89,15 @@ Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2afd31f0387a8-SIN
+CF-RAY: 72d2bf12c81e01b8-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 Nomor anda belum terdaftar, silakan mendaftar terlebih dahulu.
 ]]></system-out>
   </testcase>
-  <testcase name="failed_login_invalidphonenumberformat" classname="PPProd.partaiperindo" time="1.124">
+  <testcase name="failed_login_invalidphonenumberformat" classname="PPProd.partaiperindo" time="1.141">
     <system-out><![CDATA[HTTP/1.1 400 Bad Request
-Date: Tue, 19 Jul 2022 10:13:51 GMT
+Date: Tue, 19 Jul 2022 10:24:16 GMT
 Content-Type: text/plain; charset=UTF-8
 Content-Length: 75
 Connection: keep-alive
@@ -108,15 +107,15 @@ Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2afd3eb2687ea-SIN
+CF-RAY: 72d2bf140f064a08-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 Format No Telepon tidak diketahui.Gunakan Format diawali dengan '62' atau 0
 ]]></system-out>
   </testcase>
-  <testcase name="forgotpassword" classname="PPProd.partaiperindo" time="5.267">
+  <testcase name="forgotpassword" classname="PPProd.partaiperindo" time="5.297">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:52 GMT
+Date: Tue, 19 Jul 2022 10:24:17 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -126,20 +125,20 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2afdb39cf8802-SIN
+CF-RAY: 72d2bf1b4b6a893e-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "phone_number": "+6281223257356",
     "expired": 600,
-    "expired_datetime": "2022-07-19T17:23:36+07:00"
+    "expired_datetime": "2022-07-19T17:34:01+07:00"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="register" classname="PPProd.partaiperindo" time="1.227">
+  <testcase name="register" classname="PPProd.partaiperindo" time="25.394">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:57 GMT
+Date: Tue, 19 Jul 2022 10:24:46 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -149,20 +148,20 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2affbefac4703-SIN
+CF-RAY: 72d2bf3c2f2b881f-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "phone_number": "+6281382648636",
     "expired": 600,
-    "expired_datetime": "2022-07-19T17:23:42+07:00"
+    "expired_datetime": "2022-07-19T17:34:31+07:00"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="search" classname="PPProd.partaiperindo" time="0.275">
+  <testcase name="search" classname="PPProd.partaiperindo" time="0.229">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:47 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -172,7 +171,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b0037e5ba066-SIN
+CF-RAY: 72d2bfdae8336c27-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -181,362 +180,6 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         "more_data": true
     },
     "data": [
-        {
-            "section": "kepartaian",
-            "data": [
-                {
-                    "type": "sayap-perindo",
-                    "id": "6",
-                    "details": {
-                        "title": "Pemuda Perindo",
-                        "logo": "https://api.partaiperindo.com/statics/content/sayapperindo/logo-pemuda-perindo-80x80-1653636964264513936.png"
-                    }
-                },
-                {
-                    "type": "sayap-perindo",
-                    "id": "5",
-                    "details": {
-                        "title": "Kartini Perindo",
-                        "logo": "https://api.partaiperindo.com/statics/content/sayapperindo/logo-rounded-image-logo-sayap-kartini-perindo-300x300px-1649311623073915676.png"
-                    }
-                }
-            ]
-        },
-        {
-            "section": "related-pages",
-            "data": [
-                {
-                    "type": "about",
-                    "id": "12",
-                    "details": {
-                        "title": " Pidato Kebangsaan ### Ketum Partai Perindo Bapak Hary Tanoesoedibjo",
-                        "description": "Ketua Umum Partai Perindo Harry Tanoesoedibjo menyampaikan Pidato Kebangsaan pada peringatan HUT ke-7 Partai Perindo, Jumat (8/10/2021)."
-                    }
-                },
-                {
-                    "type": "about",
-                    "id": "11",
-                    "details": {
-                        "title": "Doa & Harapan ### Presiden RI Joko Widodo untuk Partai Perindo di HUT ke-7",
-                        "description": "Presiden RI Joko Widodo menyampaikan pidato pada acara HUT ke-7 Partai Perindo. "
-                    }
-                },
-                {
-                    "type": "about",
-                    "id": "10",
-                    "details": {
-                        "title": "Periode Kedua ###Jokowi",
-                        "description": "<p>Pada Pemilihan Presiden 2019, Partai Perindo dengan tegas mendukung keberlanjutan kerja Presiden Joko Widodo. Sesuai dengan jiwa dan khidmat gerak juang Partai Perindo bahwa ikhtiar politik demi Indonesia Maju dan Sejahtera harus dilakukan tanpa bertele-tele, sehingga dukungan terhadap Presiden Joko Widodo untuk meneruskan upaya pembangunan Indonesia merupakan keniscayaan.<br/></p>"
-                    }
-                },
-                {
-                    "type": "about",
-                    "id": "9",
-                    "details": {
-                        "title": "Capaian ###Pemilu 2019",
-                        "description": "<p>Partai Perindo sebagai kekuatan politik yang baru lahir ditengah partai-partai lama Indonesia, telah berhasil meraih 29 kursi DPRD Propinsi dan 379 DPRD Kabupaten&#x2F;Kota. Dengan raihan suara 3.738.320 secara nasional, Partai Perindo merupakan partai politik yang paling tinggi diantara 7 partai politik non ambang batas DPR RI lainnya.<br/><br/>Hal ini adalah modal dasar terkuat dan terpenting bagi Partai Perindo untuk melesat lebih jauh di Pemilu 2024 mendatang.</p>"
-                    }
-                },
-                {
-                    "type": "about",
-                    "id": "8",
-                    "details": {
-                        "title": "Filosofi ###Logo",
-                        "description": "<p>Burung Garuda dengan masing-masing sayap memiliki lima helai melambangkan NKRI dengan Pancasila sebagai dasar Pijakan.<br/><br/>Kepala Garuda menghadap kekanan menggambarkan sikap Partai yang selalu maju berjuang untuk mewujudkan visi Partai yaitu Indonesia Sejahtera.<br/><br/>Warna merah melambangkan keberanian, kekuatan dan semangat tanpa pernah menyerah dalam membangun Indonesia Sejahtera.<br/><br/>Warna Putih melambangkan Kejujuran, Keterbukaan, dan Ketulusan dalam berjuang.<br/><br/>Warna Biru melambangkan Kepercayaan, Kebijaksanaan, dan Konsistensi dalam Berjuang.<br/><br/>Sayap yang terbentang melambangkan sikap Partai Perindo siap berjuang tanpa berhenti, tanpa mengenal lelah untuk mewujudkan Indonesia Sejahtera serta berperan aktif dalam menjaga Persatuan dan Kesatuan Bangsa.</p>"
-                    }
-                }
-            ]
-        },
-        {
-            "section": "events",
-            "data": [
-                {
-                    "type": "event",
-                    "id": "15",
-                    "details": {
-                        "slug": "kompetisi-cover-mars-perindo",
-                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-floating-banner-aa4db0e-min.jpeg",
-                        "title": "Kompetisi Cover Mars Perindo",
-                        "event_start_date": "2021-08-06T00:00:00+07:00",
-                        "event_end_date": "2021-08-22T00:00:00+07:00"
-                    }
-                },
-                {
-                    "type": "event",
-                    "id": "16",
-                    "details": {
-                        "slug": "giat-vaksinasi-partai-perindo-di-lido-lake-resort",
-                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-09-26-at-20-36-08.jpeg",
-                        "title": "Giat Vaksinasi Partai Perindo di Lido Lake Resort",
-                        "event_start_date": "2021-09-26T00:00:00+07:00",
-                        "event_end_date": "2021-09-26T00:00:00+07:00"
-                    }
-                },
-                {
-                    "type": "event",
-                    "id": "20",
-                    "details": {
-                        "slug": "info-giat-vaksinasi-partai-perindo",
-                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-30-28-04-10-2021-07-23-28.jpeg",
-                        "title": "Info Giat Vaksinasi Partai Perindo",
-                        "event_start_date": "2021-09-27T00:00:00+07:00",
-                        "event_end_date": "2021-09-27T00:00:00+07:00"
-                    }
-                },
-                {
-                    "type": "event",
-                    "id": "17",
-                    "details": {
-                        "slug": "giat-vaksinasi-partai-perindo-di-kendal",
-                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-21-18-04-10-2021-06-59-31.jpeg",
-                        "title": "Giat Vaksinasi Partai Perindo di Kendal",
-                        "event_start_date": "2021-10-02T00:00:01+07:00",
-                        "event_end_date": "2021-10-02T23:00:03+07:00"
-                    }
-                },
-                {
-                    "type": "event",
-                    "id": "18",
-                    "details": {
-                        "slug": "giat-vaksinasi-partai-perindo-di-kab-semarang",
-                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-21-19-04-10-2021-07-03-59.jpeg",
-                        "title": "Giat Vaksinasi Partai Perindo di Kab. Semarang",
-                        "event_start_date": "2021-10-03T00:00:00+07:00",
-                        "event_end_date": "2021-10-03T23:00:04+07:00"
-                    }
-                }
-            ]
-        },
-        {
-            "section": "gallery",
-            "data": [
-                {
-                    "type": "gallery",
-                    "id": "23",
-                    "details": {
-                        "type": "video",
-                        "asset": {
-                            "String": "",
-                            "Valid": false
-                        },
-                        "embed": {
-                            "String": "QldwYAZf6EY",
-                            "Valid": true
-                        },
-                        "description": "Mars Partai Perindo adalah nada perjuangan untuk memberikan keyakinan bahwa ikhtiar kepartaian merupakan kunci kemajuan, kesejahteraan bangsa & negara"
-                    }
-                },
-                {
-                    "type": "gallery",
-                    "id": "22",
-                    "details": {
-                        "type": "video",
-                        "asset": {
-                            "String": "",
-                            "Valid": false
-                        },
-                        "embed": {
-                            "String": "U475fVAaP5s",
-                            "Valid": true
-                        },
-                        "description": "Pidato Ketua Umum\r\n\r\nPeluncuran Logo baru Partai Perindo, lahir baru dengan semangat baru dan strategi baru untuk Indonesia sejahtera."
-                    }
-                },
-                {
-                    "type": "gallery",
-                    "id": "45",
-                    "details": {
-                        "type": "video",
-                        "asset": {
-                            "String": "",
-                            "Valid": false
-                        },
-                        "embed": {
-                            "String": "W7SLqhDYMYk",
-                            "Valid": true
-                        },
-                        "description": "Partai Perindo Gunungkidul memantapkan persiapan Pemilu 2024. Soliditas kader dipererat, komunikasi diperkuat. Target minimal 1 kursi 1 dapil. "
-                    }
-                },
-                {
-                    "type": "gallery",
-                    "id": "39",
-                    "details": {
-                        "type": "video",
-                        "asset": {
-                            "String": "",
-                            "Valid": false
-                        },
-                        "embed": {
-                            "String": "I2yjBeoSuRE",
-                            "Valid": true
-                        },
-                        "description": "Ribuan warga Kab Bogor dan sekitarnya memadati Lido Lake Resort. Mereka antusias mendapatkan vaksin Pfizer dari Partai Perindo, Senin (27/09/2021).\r\n"
-                    }
-                },
-                {
-                    "type": "gallery",
-                    "id": "37",
-                    "details": {
-                        "type": "video",
-                        "asset": {
-                            "String": "",
-                            "Valid": false
-                        },
-                        "embed": {
-                            "String": "qq_avhFvKf0",
-                            "Valid": true
-                        },
-                        "description": "Wynne Frederica, istri Bupati Kendal Dico M Ganinduto senang banget melihat antusiasme warganya ikut vaksinasi Partai Perindo, Minggu (3/10/2021).\r\n"
-                    }
-                }
-            ]
-        },
-        {
-            "section": "news",
-            "data": [
-                {
-                    "type": "news",
-                    "id": "3765",
-                    "details": {
-                        "slug": "partai-perindo-dki-dukung-pembentukan-provinsi-jakarta-raya",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-effendi2-1658218342173048937.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 9,
-                        "title": "Partai Perindo DKI Dukung Pembentukan Provinsi Jakarta Raya",
-                        "news_date": "2022-07-19T15:10:07+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3764",
-                    "details": {
-                        "slug": "legislator-partai-perindo-mimika-berharap-disnakertrans-bekali-kompetensi-pencaker-oap",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-aloisius-paerong-1658215917792209946.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 5,
-                        "title": "Legislator Partai Perindo Mimika Berharap Disnakertrans Bekali Kompetensi Pencaker OAP",
-                        "news_date": "2022-07-19T14:32:03+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3763",
-                    "details": {
-                        "slug": "politisi-partai-perindo-gemar-membaca-di-era-globalisasi-dinilai-cenderung-menurun",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-1658190728-1-1658211128145287927.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 5,
-                        "title": "Politisi Partai Perindo: Gemar Membaca di Era Globalisasi Dinilai Cenderung Menurun",
-                        "news_date": "2022-07-19T13:11:57+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3762",
-                    "details": {
-                        "slug": "partai-perindo-dukung-pemerintah-tegas-terhadap-facebook-twitter-dan-google-perlu-shock-therapy",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-nuning2-1658209320036610832.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 16,
-                        "title": "Partai Perindo Dukung Pemerintah Tegas terhadap Facebook, Twitter, dan Google: Perlu Shock Therapy ",
-                        "news_date": "2022-07-19T12:40:52+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3761",
-                    "details": {
-                        "slug": "timnas-bulu-tangkis-juara-umum-di-singapore-open-2022-partai-perindo-kebanggaan-buat-kita",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-master_97q5ip2qm5_684_bulu_tangkis-1658208806925596802.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 12,
-                        "title": "Timnas Bulu Tangkis Juara Umum di Singapore Open 2022, Partai Perindo: Kebanggaan Buat Kita",
-                        "news_date": "2022-07-19T12:33:46+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3760",
-                    "details": {
-                        "slug": "lolos-verifikasi-internal-peserta-pemilu-partai-perindo-diy-tancap-gas-menuju-pemilu-2024",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-yuni-astuti-1658198076075094713.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 10,
-                        "title": "Lolos Verifikasi Internal Peserta Pemilu, Partai Perindo DIY Tancap Gas Menuju Pemilu 2024",
-                        "news_date": "2022-07-19T09:29:54+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3759",
-                    "details": {
-                        "slug": "partai-perindo-sarolangun-jaring-bacaleg-dari-kalangan-milenial",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-perindo_sarolangun-1658194175255349654.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 10,
-                        "title": "Partai Perindo Sarolangun Jaring Bacaleg dari Kalangan Milenial",
-                        "news_date": "2022-07-19T08:26:11+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3758",
-                    "details": {
-                        "slug": "wacana-depok-gabung-jakarta-partai-perindo-dki-paparkan-tiga-hal-yang-perlu-menjadi-pertimbangan",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-wacana-depok-gabung-jakarta-perindo-paparkan-tiga-hal-yang-perlu-menjadi-pertimbangan-xud-1658193587571556497.jpg",
-                            "Valid": false
-                        },
-                        "cat_id": 16,
-                        "title": "Wacana Depok Gabung Jakarta, Partai Perindo DKI Paparkan Tiga Hal yang Perlu Menjadi Pertimbangan",
-                        "news_date": "2022-07-19T08:14:50+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "3757",
-                    "details": {
-                        "slug": "podcast-aksi-nyata-ungkap-cara-cari-cuan-lewat-tiktok",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-podcast-aksi-nyata-ungkap-cara-cari-cuan-lewat-tiktok-kga-1658192826130698106.webp",
-                            "Valid": false
-                        },
-                        "cat_id": 13,
-                        "title": "Podcast AkSI Nyata Ungkap Cara Cari Cuan lewat TikTok",
-                        "news_date": "2022-07-19T08:05:36+07:00"
-                    }
-                },
-                {
-                    "type": "news",
-                    "id": "1",
-                    "details": {
-                        "slug": "bagikan-ribuan-takjil-bukti-kehadiran-perindo-langkat-di-tengah-masyarakat",
-                        "thumbnail": {
-                            "String": "https://api.partaiperindo.com/statics/content/news/2021/05/di-bulan-penuh-berkah-perindo-kabupaten-langkat-bagikan-ribuan-takjil-zfg.png",
-                            "Valid": false
-                        },
-                        "cat_id": 13,
-                        "title": "Bagikan Ribuan Takjil, Bukti Kehadiran Perindo Langkat di Tengah Masyarakat",
-                        "news_date": "2021-05-01T15:01:07+07:00"
-                    }
-                }
-            ]
-        },
         {
             "section": "rumah-perindo",
             "data": [
@@ -688,14 +331,370 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
                     }
                 }
             ]
+        },
+        {
+            "section": "gallery",
+            "data": [
+                {
+                    "type": "gallery",
+                    "id": "651",
+                    "details": {
+                        "type": "video",
+                        "asset": {
+                            "String": "",
+                            "Valid": false
+                        },
+                        "embed": {
+                            "String": "wLPO3FuThl4",
+                            "Valid": true
+                        },
+                        "description": "Alhamdulillah, Partai Perindo Sumut Hadirkan Senyum Warga Kota Medan Lewat Pembagian Daging Kurban\r\n"
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "id": "644",
+                    "details": {
+                        "type": "video",
+                        "asset": {
+                            "String": "",
+                            "Valid": false
+                        },
+                        "embed": {
+                            "String": "JCW3jSz6khQ",
+                            "Valid": true
+                        },
+                        "description": "Menembus Hujan, Anggota Dewan Partai Perindo Bagikan Daging Kurban ke Rumah Warga Rejang Lebong\r\n"
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "id": "658",
+                    "details": {
+                        "type": "video",
+                        "asset": {
+                            "String": "",
+                            "Valid": false
+                        },
+                        "embed": {
+                            "String": "vV2x_TT-fTk",
+                            "Valid": true
+                        },
+                        "description": "RPA Perindo Perjuangan Hak-Hak Perempuan dan Anak Maluku\r\n"
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "id": "23",
+                    "details": {
+                        "type": "video",
+                        "asset": {
+                            "String": "",
+                            "Valid": false
+                        },
+                        "embed": {
+                            "String": "QldwYAZf6EY",
+                            "Valid": true
+                        },
+                        "description": "Mars Partai Perindo adalah nada perjuangan untuk memberikan keyakinan bahwa ikhtiar kepartaian merupakan kunci kemajuan, kesejahteraan bangsa & negara"
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "id": "22",
+                    "details": {
+                        "type": "video",
+                        "asset": {
+                            "String": "",
+                            "Valid": false
+                        },
+                        "embed": {
+                            "String": "U475fVAaP5s",
+                            "Valid": true
+                        },
+                        "description": "Pidato Ketua Umum\r\n\r\nPeluncuran Logo baru Partai Perindo, lahir baru dengan semangat baru dan strategi baru untuk Indonesia sejahtera."
+                    }
+                }
+            ]
+        },
+        {
+            "section": "related-pages",
+            "data": [
+                {
+                    "type": "about",
+                    "id": "12",
+                    "details": {
+                        "title": " Pidato Kebangsaan ### Ketum Partai Perindo Bapak Hary Tanoesoedibjo",
+                        "description": "Ketua Umum Partai Perindo Harry Tanoesoedibjo menyampaikan Pidato Kebangsaan pada peringatan HUT ke-7 Partai Perindo, Jumat (8/10/2021)."
+                    }
+                },
+                {
+                    "type": "about",
+                    "id": "11",
+                    "details": {
+                        "title": "Doa & Harapan ### Presiden RI Joko Widodo untuk Partai Perindo di HUT ke-7",
+                        "description": "Presiden RI Joko Widodo menyampaikan pidato pada acara HUT ke-7 Partai Perindo. "
+                    }
+                },
+                {
+                    "type": "about",
+                    "id": "10",
+                    "details": {
+                        "title": "Periode Kedua ###Jokowi",
+                        "description": "<p>Pada Pemilihan Presiden 2019, Partai Perindo dengan tegas mendukung keberlanjutan kerja Presiden Joko Widodo. Sesuai dengan jiwa dan khidmat gerak juang Partai Perindo bahwa ikhtiar politik demi Indonesia Maju dan Sejahtera harus dilakukan tanpa bertele-tele, sehingga dukungan terhadap Presiden Joko Widodo untuk meneruskan upaya pembangunan Indonesia merupakan keniscayaan.<br/></p>"
+                    }
+                },
+                {
+                    "type": "about",
+                    "id": "9",
+                    "details": {
+                        "title": "Capaian ###Pemilu 2019",
+                        "description": "<p>Partai Perindo sebagai kekuatan politik yang baru lahir ditengah partai-partai lama Indonesia, telah berhasil meraih 29 kursi DPRD Propinsi dan 379 DPRD Kabupaten&#x2F;Kota. Dengan raihan suara 3.738.320 secara nasional, Partai Perindo merupakan partai politik yang paling tinggi diantara 7 partai politik non ambang batas DPR RI lainnya.<br/><br/>Hal ini adalah modal dasar terkuat dan terpenting bagi Partai Perindo untuk melesat lebih jauh di Pemilu 2024 mendatang.</p>"
+                    }
+                },
+                {
+                    "type": "about",
+                    "id": "8",
+                    "details": {
+                        "title": "Filosofi ###Logo",
+                        "description": "<p>Burung Garuda dengan masing-masing sayap memiliki lima helai melambangkan NKRI dengan Pancasila sebagai dasar Pijakan.<br/><br/>Kepala Garuda menghadap kekanan menggambarkan sikap Partai yang selalu maju berjuang untuk mewujudkan visi Partai yaitu Indonesia Sejahtera.<br/><br/>Warna merah melambangkan keberanian, kekuatan dan semangat tanpa pernah menyerah dalam membangun Indonesia Sejahtera.<br/><br/>Warna Putih melambangkan Kejujuran, Keterbukaan, dan Ketulusan dalam berjuang.<br/><br/>Warna Biru melambangkan Kepercayaan, Kebijaksanaan, dan Konsistensi dalam Berjuang.<br/><br/>Sayap yang terbentang melambangkan sikap Partai Perindo siap berjuang tanpa berhenti, tanpa mengenal lelah untuk mewujudkan Indonesia Sejahtera serta berperan aktif dalam menjaga Persatuan dan Kesatuan Bangsa.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "section": "news",
+            "data": [
+                {
+                    "type": "news",
+                    "id": "3765",
+                    "details": {
+                        "slug": "soal-pembentukan-provinsi-jakarta-raya-begini-kata-partai-perindo-dki",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-effendi2-1658218342173048937.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 9,
+                        "title": "Soal Pembentukan Provinsi Jakarta Raya, Begini Kata Partai Perindo DKI",
+                        "news_date": "2022-07-19T15:10:07+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3763",
+                    "details": {
+                        "slug": "politisi-partai-perindo-palangka-raya-gemar-membaca-di-era-globalisasi-dinilai-cenderung-menurun",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-1658190728-1-1658211128145287927.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 5,
+                        "title": "Politisi Partai Perindo Palangka Raya: Gemar Membaca di Era Globalisasi Dinilai Cenderung Menurun",
+                        "news_date": "2022-07-19T13:11:57+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3761",
+                    "details": {
+                        "slug": "timnas-bulu-tangkis-juara-umum-di-singapore-open-2022-pemuda-perindo-kebanggaan-buat-kita",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-master_97q5ip2qm5_684_bulu_tangkis-1658208806925596802.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 12,
+                        "title": "Timnas Bulu Tangkis Juara Umum di Singapore Open 2022, Pemuda Perindo: Kebanggaan Buat Kita",
+                        "news_date": "2022-07-19T12:33:46+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3766",
+                    "details": {
+                        "slug": "soal-kuota-haji-khusus-lansia-partai-perindo-harus-diikuti-dengan-persiapan-pelayanan",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-khaliq-1-1658225697433414584.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 16,
+                        "title": "Soal Kuota Haji Khusus Lansia, Partai Perindo: Harus Diikuti dengan Persiapan Pelayanan",
+                        "news_date": "2022-07-19T17:14:54+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3764",
+                    "details": {
+                        "slug": "legislator-partai-perindo-mimika-berharap-disnakertrans-bekali-kompetensi-pencaker-oap",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-aloisius-paerong-1658215917792209946.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 5,
+                        "title": "Legislator Partai Perindo Mimika Berharap Disnakertrans Bekali Kompetensi Pencaker OAP",
+                        "news_date": "2022-07-19T14:32:03+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3762",
+                    "details": {
+                        "slug": "partai-perindo-dukung-pemerintah-tegas-terhadap-facebook-twitter-dan-google-perlu-shock-therapy",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-nuning2-1658209320036610832.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 16,
+                        "title": "Partai Perindo Dukung Pemerintah Tegas terhadap Facebook, Twitter, dan Google: Perlu Shock Therapy ",
+                        "news_date": "2022-07-19T12:40:52+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3760",
+                    "details": {
+                        "slug": "lolos-verifikasi-internal-peserta-pemilu-partai-perindo-diy-tancap-gas-menuju-pemilu-2024",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-yuni-astuti-1658198076075094713.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 10,
+                        "title": "Lolos Verifikasi Internal Peserta Pemilu, Partai Perindo DIY Tancap Gas Menuju Pemilu 2024",
+                        "news_date": "2022-07-19T09:29:54+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3759",
+                    "details": {
+                        "slug": "partai-perindo-sarolangun-jaring-bacaleg-dari-kalangan-milenial",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-perindo_sarolangun-1658194175255349654.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 10,
+                        "title": "Partai Perindo Sarolangun Jaring Bacaleg dari Kalangan Milenial",
+                        "news_date": "2022-07-19T08:26:11+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3758",
+                    "details": {
+                        "slug": "wacana-depok-gabung-jakarta-partai-perindo-dki-paparkan-tiga-hal-yang-perlu-menjadi-pertimbangan",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-wacana-depok-gabung-jakarta-perindo-paparkan-tiga-hal-yang-perlu-menjadi-pertimbangan-xud-1658193587571556497.jpg",
+                            "Valid": false
+                        },
+                        "cat_id": 16,
+                        "title": "Wacana Depok Gabung Jakarta, Partai Perindo DKI Paparkan Tiga Hal yang Perlu Menjadi Pertimbangan",
+                        "news_date": "2022-07-19T08:14:50+07:00"
+                    }
+                },
+                {
+                    "type": "news",
+                    "id": "3757",
+                    "details": {
+                        "slug": "podcast-aksi-nyata-ungkap-cara-cari-cuan-lewat-tiktok",
+                        "thumbnail": {
+                            "String": "https://api.partaiperindo.com/statics/content/news/2022/07/thumbnail-podcast-aksi-nyata-ungkap-cara-cari-cuan-lewat-tiktok-kga-1658192826130698106.webp",
+                            "Valid": false
+                        },
+                        "cat_id": 13,
+                        "title": "Podcast AkSI Nyata Ungkap Cara Cari Cuan lewat TikTok",
+                        "news_date": "2022-07-19T08:05:36+07:00"
+                    }
+                }
+            ]
+        },
+        {
+            "section": "kepartaian",
+            "data": [
+                {
+                    "type": "sayap-perindo",
+                    "id": "6",
+                    "details": {
+                        "title": "Pemuda Perindo",
+                        "logo": "https://api.partaiperindo.com/statics/content/sayapperindo/logo-pemuda-perindo-80x80-1653636964264513936.png"
+                    }
+                },
+                {
+                    "type": "sayap-perindo",
+                    "id": "5",
+                    "details": {
+                        "title": "Kartini Perindo",
+                        "logo": "https://api.partaiperindo.com/statics/content/sayapperindo/logo-rounded-image-logo-sayap-kartini-perindo-300x300px-1649311623073915676.png"
+                    }
+                }
+            ]
+        },
+        {
+            "section": "events",
+            "data": [
+                {
+                    "type": "event",
+                    "id": "15",
+                    "details": {
+                        "slug": "kompetisi-cover-mars-perindo",
+                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-floating-banner-aa4db0e-min.jpeg",
+                        "title": "Kompetisi Cover Mars Perindo",
+                        "event_start_date": "2021-08-06T00:00:00+07:00",
+                        "event_end_date": "2021-08-22T00:00:00+07:00"
+                    }
+                },
+                {
+                    "type": "event",
+                    "id": "16",
+                    "details": {
+                        "slug": "giat-vaksinasi-partai-perindo-di-lido-lake-resort",
+                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-09-26-at-20-36-08.jpeg",
+                        "title": "Giat Vaksinasi Partai Perindo di Lido Lake Resort",
+                        "event_start_date": "2021-09-26T00:00:00+07:00",
+                        "event_end_date": "2021-09-26T00:00:00+07:00"
+                    }
+                },
+                {
+                    "type": "event",
+                    "id": "20",
+                    "details": {
+                        "slug": "info-giat-vaksinasi-partai-perindo",
+                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-30-28-04-10-2021-07-23-28.jpeg",
+                        "title": "Info Giat Vaksinasi Partai Perindo",
+                        "event_start_date": "2021-09-27T00:00:00+07:00",
+                        "event_end_date": "2021-09-27T00:00:00+07:00"
+                    }
+                },
+                {
+                    "type": "event",
+                    "id": "17",
+                    "details": {
+                        "slug": "giat-vaksinasi-partai-perindo-di-kendal",
+                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-21-18-04-10-2021-06-59-31.jpeg",
+                        "title": "Giat Vaksinasi Partai Perindo di Kendal",
+                        "event_start_date": "2021-10-02T00:00:01+07:00",
+                        "event_end_date": "2021-10-02T23:00:03+07:00"
+                    }
+                },
+                {
+                    "type": "event",
+                    "id": "18",
+                    "details": {
+                        "slug": "giat-vaksinasi-partai-perindo-di-kab-semarang",
+                        "thumbnail": "https://api.partaiperindo.com/statics/content/event/thumb-whatsapp-image-2021-10-04-at-18-21-19-04-10-2021-07-03-59.jpeg",
+                        "title": "Giat Vaksinasi Partai Perindo di Kab. Semarang",
+                        "event_start_date": "2021-10-03T00:00:00+07:00",
+                        "event_end_date": "2021-10-03T23:00:04+07:00"
+                    }
+                }
+            ]
         }
     ]
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getAllAksi" classname="PPProd.partaiperindo" time="0.061">
+  <testcase name="getAllAksi" classname="PPProd.partaiperindo" time="0.103">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -705,7 +704,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b004df01a02d-SIN
+CF-RAY: 72d2bfdbfd4e878d-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -808,9 +807,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getAksiDetail" classname="PPProd.partaiperindo" time="0.144">
+  <testcase name="getAksiDetail" classname="PPProd.partaiperindo" time="0.17">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -820,7 +819,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b005891e87fb-SIN
+CF-RAY: 72d2bfdcedad01cd-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -854,9 +853,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="failed_getAksiNotFound" classname="PPProd.partaiperindo" time="0.096">
+  <testcase name="failed_getAksiNotFound" classname="PPProd.partaiperindo" time="0.132">
     <system-out><![CDATA[HTTP/1.1 404 Not Found
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: text/plain; charset=UTF-8
 Content-Length: 9
 Connection: keep-alive
@@ -866,15 +865,15 @@ Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b006694e9f91-SIN
+CF-RAY: 72d2bfde1ea7a083-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 Not Found
 ]]></system-out>
   </testcase>
-  <testcase name="getListAgenda" classname="PPProd.partaiperindo" time="0.188">
+  <testcase name="getListAgenda" classname="PPProd.partaiperindo" time="0.221">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -884,7 +883,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b0071aa28833-SIN
+CF-RAY: 72d2bfdedc6b1700-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -1009,9 +1008,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getListAgendaDetail" classname="PPProd.partaiperindo" time="0.105">
+  <testcase name="getListAgendaDetail" classname="PPProd.partaiperindo" time="0.123">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1021,7 +1020,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b00839479fda-SIN
+CF-RAY: 72d2bfe049c0ab61-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -1041,9 +1040,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="failed_getListAgendaDetail" classname="PPProd.partaiperindo" time="0.108">
+  <testcase name="failed_getListAgendaDetail" classname="PPProd.partaiperindo" time="0.149">
     <system-out><![CDATA[HTTP/1.1 404 Not Found
-Date: Tue, 19 Jul 2022 10:13:59 GMT
+Date: Tue, 19 Jul 2022 10:24:48 GMT
 Content-Type: text/plain; charset=UTF-8
 Content-Length: 9
 Connection: keep-alive
@@ -1053,15 +1052,15 @@ Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b008ea8f6bc1-SIN
+CF-RAY: 72d2bfe10b9e9e3b-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 Not Found
 ]]></system-out>
   </testcase>
-  <testcase name="getmember" classname="PPProd.partaiperindo" time="1.814">
+  <testcase name="getmember" classname="PPProd.partaiperindo" time="1.955">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Tue, 19 Jul 2022 10:14:00 GMT
+Date: Tue, 19 Jul 2022 10:24:49 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 136
 Connection: keep-alive
@@ -1071,16 +1070,16 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b009dd0d8802-SIN
+CF-RAY: 72d2bfe229eaa3f4-SIN
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "phone_number": "+6281315402385",
-    "token": "6-q73VLLsKONjzSZs-eubYH0xTXCf0f_M1BXp-dAhPw=",
-    "expired_datetime": "2022-07-20T17:13:44+07:00"
+    "token": "Qje5Ob666TTljolCqYRGYnGvMIPhGciMaD2YPNQjqlo=",
+    "expired_datetime": "2022-07-20T17:24:33+07:00"
 }
 HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:14:01 GMT
+Date: Tue, 19 Jul 2022 10:24:50 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1090,7 +1089,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b0142aa348fa-SIN
+CF-RAY: 72d2bfed58c287ba-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -1105,9 +1104,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="listaspirasi" classname="PPProd.partaiperindo" time="0.101">
+  <testcase name="listaspirasi" classname="PPProd.partaiperindo" time="0.151">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:14:01 GMT
+Date: Tue, 19 Jul 2022 10:24:50 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1117,7 +1116,7 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b014dfd249d8-SIN
+CF-RAY: 72d2bfee2a754be6-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -1154,9 +1153,9 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="listgallery" classname="PPProd.partaiperindo" time="0.163">
+  <testcase name="listgallery" classname="PPProd.partaiperindo" time="0.217">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 19 Jul 2022 10:14:01 GMT
+Date: Tue, 19 Jul 2022 10:24:51 GMT
 Content-Type: application/json; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1166,13 +1165,13 @@ CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 X-Content-Type-Options: nosniff
 Server: cloudflare
-CF-RAY: 72d2b0159a746bb8-SIN
+CF-RAY: 72d2bfef2a266bd6-SIN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "meta": {
-        "total_data": 629
+        "total_data": 635
     },
     "data": [
         {
@@ -1282,7 +1281,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 635,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1297,7 +1296,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 643,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1312,7 +1311,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 644,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1402,7 +1401,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 650,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1417,7 +1416,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 651,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1432,7 +1431,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         },
         {
             "gallery_id": 652,
-            "order_id": 0,
+            "order_id": 1,
             "type": "video",
             "asset": {
                 "String": "",
@@ -1478,22 +1477,5 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
     ]
 }
 ]]></system-out>
-  </testcase>
-  <testcase name="setUpTest" classname="PPProd.partaiperindoUI" time="0.262">
-    <failure message="The driver executable must exist: C:\jenkins\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\jenkins\chromedriver.exe
-	at PPProd.partaiperindoUI.setUpTest(partaiperindoUI.java:38)
-]]></failure>
-  </testcase>
-  <testcase name="PetunjukArah" classname="PPProd.partaiperindoUI" time="0">
-    <skipped message="The driver executable must exist: C:\jenkins\chromedriver.exe"/>
-  </testcase>
-  <testcase name="kartiniPerindo" classname="PPProd.partaiperindoUI" time="0">
-    <skipped message="The driver executable must exist: C:\jenkins\chromedriver.exe"/>
-  </testcase>
-  <testcase name="login" classname="PPProd.partaiperindoUI" time="0">
-    <skipped message="The driver executable must exist: C:\jenkins\chromedriver.exe"/>
-  </testcase>
-  <testcase name="pemudaPerindo" classname="PPProd.partaiperindoUI" time="0">
-    <skipped message="The driver executable must exist: C:\jenkins\chromedriver.exe"/>
   </testcase>
 </testsuite>

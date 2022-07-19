@@ -41,7 +41,7 @@ public static WebDriver driver;
 		
 	
 	// TC 15 - Petunjuk Arah - Rumah Perindo
-	@Test 
+	@Test (priority=16, description ="TC 16 Petunjuk Arah")
 	public void PetunjukArah() throws InterruptedException {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));   
@@ -52,7 +52,7 @@ public static WebDriver driver;
 	}
  
 	// TC 16 - Sayap Perindo - Kartini Perindo
-	@Test 
+	@Test (priority=17, description ="TC 17 Open Kartini Perindo")
 	public void kartiniPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -77,7 +77,7 @@ public static WebDriver driver;
 	}
 
 	// TC 17 - Sayap Perindo - Pemuda Perindo
-	@Test 
+	@Test (priority=18, description ="TC 15 Open Pemuda Perindo")
 	public void pemudaPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -102,7 +102,7 @@ public static WebDriver driver;
 	}
 	
 	
-	@Test 
+	@Test (priority=19, description ="TC 19 login UI")
 	// TC 18 - login
 	public void login() throws InterruptedException {
 
@@ -113,7 +113,6 @@ public static WebDriver driver;
 		loginProd.input_password(driver).sendKeys("Gagger_123");
 		Thread.sleep(1000);
 		loginProd.button_login_second(driver).click();
-	//Test push 16 juni 2022 - 4
 	}
 	
 	
