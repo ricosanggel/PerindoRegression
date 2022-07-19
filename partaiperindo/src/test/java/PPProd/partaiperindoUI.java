@@ -41,7 +41,7 @@ public static WebDriver driver;
 		
 	
 	// TC 15 - Petunjuk Arah - Rumah Perindo
-	@Test (priority=1)
+	@Test (priority=16)
 	public void PetunjukArah() throws InterruptedException {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));   
@@ -52,7 +52,7 @@ public static WebDriver driver;
 	}
  
 	// TC 16 - Sayap Perindo - Kartini Perindo
-	@Test (priority=2)
+	@Test (priority=17)
 	public void kartiniPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -77,7 +77,7 @@ public static WebDriver driver;
 	}
 
 	// TC 17 - Sayap Perindo - Pemuda Perindo
-	@Test (priority = 3)
+	@Test (priority = 18)
 	public void pemudaPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -102,7 +102,7 @@ public static WebDriver driver;
 	}
 	
 	
-	@Test (priority = 4)
+	@Test (priority = 19)
 	// TC 18 - login
 	public void login() throws InterruptedException {
 
