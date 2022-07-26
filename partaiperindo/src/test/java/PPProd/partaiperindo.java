@@ -179,7 +179,7 @@ public class partaiperindo {
 					AssertJUnit.assertTrue(jsonString.contains("token"));
 			        //This token will be used in later requests
 					String token = response.jsonPath().getString("token");  
-				
+			
 					Thread.sleep(1000);
 			    given()
 			    .header("authorization", "Bearer " + token)
@@ -212,8 +212,61 @@ public class partaiperindo {
 			.statusCode(200)
 		.log().all();
 	}
-	
+	@Test (priority=16, description ="TC 16 Get Content-About")	
+	public void about() {
+		given()
+		.headers("Content-Type", "application/json")
+		.params("cache", "true")
+		.when()
+			.get("https://api.partaiperindo.com/content/about?type=embed")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	@Test (priority=17, description ="TC 17 Get Banner-Main")	
+	public void bannerMain() {
+		given()
+		.headers("Content-Type", "application/json")
+		.params("cache", "true")
+		.when()
+			.get("https://api.partaiperindo.com/content/banner?type=main")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	@Test (priority=18, description ="TC 18 Get Banner-Mobileapps")	
+	public void bannerMobileApps() {
+		given()
+		.headers("Content-Type", "application/json")
+		.params("banner_id", "6")
+		.when()
+			.get("https://api.partaiperindo.com/content/banner?type=mobileapps")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	@Test (priority=19, description ="TC 19 list bagian dari Perindo")	
+	public void bagianDariPerindo() {
+		given()
+		.headers("Content-Type", "application/json")
+		.when()
+			.get("https://api.partaiperindo.com/content/listbagiandariperindo")
+		.then()  
+			.statusCode(200)
+		.log().all();
+	}
+	@Test (priority=20, description ="TC 20 list Sayap Perindo")	
+	public void sayapPerindo() {
+		given()
+		.headers("Content-Type", "application/json")
+		.when()
+			.get("https://api.partaiperindo.com/content/listsayapperindo")
+		.then()  
+			.statusCode(200)
+		.log().all();	
+	}
 }
+
 	
 
 		
