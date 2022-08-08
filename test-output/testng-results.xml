@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-05T01:21:33 WIB" name="Default suite" finished-at="2022-08-05T01:21:35 WIB" duration-ms="1880">
+    <groups>
+    </groups>
+    <test started-at="2022-08-05T01:21:33 WIB" name="Default test" finished-at="2022-08-05T01:21:35 WIB" duration-ms="1880">
+      <class name="PPProd.partaiperindo">
+        <test-method signature="success_login_nonadmin()[pri:1, instance:PPProd.partaiperindo@8dbdac1]" started-at="2022-08-05T01:21:33 WIB" name="success_login_nonadmin" description="TC 1 Login" finished-at="2022-08-05T01:21:35 WIB" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_login_nonadmin -->
+      </class> <!-- PPProd.partaiperindo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
