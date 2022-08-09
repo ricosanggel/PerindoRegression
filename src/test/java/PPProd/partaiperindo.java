@@ -1,6 +1,7 @@
 package PPProd;
 
 
+import org.hamcrest.Matchers;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
@@ -21,8 +22,9 @@ public class partaiperindo {
 		.when().
 			post(constant.URLProdLogin)
 		.then().
-			log().all().
-			statusCode(201)
+			log().all()
+			.assertThat().statusCode(201)
+			.body("phone_number", Matchers.equalTo("+6281223257356"))
 			.extract().response();
 		
 	}
@@ -188,7 +190,8 @@ public class partaiperindo {
 					.get("https://api.partaiperindo.com/member/profile")
 				.then()
 					.log().all()
-					.statusCode(200);
+					.assertThat().statusCode(200)
+					.body("member_no", Matchers.equalTo("3275029004200001"));
 	}	
 	@Test (priority=14, description ="TC 14 Get List all Aspirasi")	
 	public void listaspirasi() {
