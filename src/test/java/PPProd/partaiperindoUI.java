@@ -40,7 +40,7 @@ public static WebDriver driver;
 	}
 		
 	
-	// TC 15 - Petunjuk Arah - Rumah Perindo
+	// TC 21 - Petunjuk Arah - Rumah Perindo
 	@Test (priority=21, description ="TC 21 Petunjuk Arah")
 	public void PetunjukArah() throws InterruptedException {
 		
@@ -51,7 +51,7 @@ public static WebDriver driver;
 	
 	}
  
-	// TC 16 - Sayap Perindo - Kartini Perindo
+	// TC 22 - Sayap Perindo - Kartini Perindo
 	@Test (priority=22, description ="TC 22 Open Kartini Perindo")
 	public void kartiniPerindo() throws InterruptedException {
 		
@@ -76,7 +76,7 @@ public static WebDriver driver;
 	
 	}
 
-	// TC 17 - Sayap Perindo - Pemuda Perindo
+	// TC 23 - Sayap Perindo - Pemuda Perindo
 	@Test (priority=23, description ="TC 23 Open Pemuda Perindo")
 	public void pemudaPerindo() throws InterruptedException {
 		

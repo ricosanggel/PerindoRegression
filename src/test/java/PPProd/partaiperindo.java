@@ -1,6 +1,7 @@
 package PPProd;
 
 
+import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -149,7 +150,8 @@ public class partaiperindo {
 		.when()
 			.get("https://api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntukindonesia")
 		.then()  
-			.statusCode(200)
+			.assertThat().statusCode(200)
+			.body("slug", Matchers.equalTo("kompetisi-digital-aksi-nyata-darikamuuntukindonesia"))
 		.log().all();
 	}
 	@Test (priority=12, description ="TC 12 Failed Get Detail on Specific Agenda")	
