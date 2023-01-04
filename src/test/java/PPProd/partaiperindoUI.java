@@ -48,7 +48,7 @@ public static WebDriver driver;
 		driver.get("https://partaiperindo.com/rumah-perindo");
 		driver.manage().window().maximize();
 		rumahProd.petunjukArah(driver).click();
-	
+	//test
 	}
  
 	// TC 22 - Sayap Perindo - Kartini Perindo

@@ -269,7 +269,7 @@ public class partaiperindo {
 		.then()  
 			.statusCode(200)
 		.log().all();	
-		// Test Remote 
+		// Test Remote branch deploy
 	}
 }
 
