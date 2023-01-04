@@ -5,7 +5,7 @@ public class constantdev {
 	//Mobile Number
 	public static final String mobilenumber1 = "081223257356";
 	//Password
-	public static final String Devpassword1 = "ric12345";
+	public static final String Devpassword1 = "ric123";
 	//URLDevAPI
 	public static final String URLDevLogin = "https://dev-api.partaiperindo.com/auth/login";
 	public static final String URLDevForgotPass = "https://dev-api.partaiperindo.com/auth/forgotpassword";

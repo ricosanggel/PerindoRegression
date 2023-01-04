@@ -243,7 +243,7 @@ public class partaiperindo {
 	public void bannerMobileApps() {
 		given()
 		.headers("Content-Type", "application/json")
-		.params("banner_id", "6")
+		.params("banner_id", "7")
 		.when()
 			.get("https://api.partaiperindo.com/content/banner?type=mobileapps")
 		.then()  
