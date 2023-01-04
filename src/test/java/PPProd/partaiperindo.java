@@ -113,7 +113,7 @@ public class partaiperindo {
 		given()
 		.headers("Content-Type", "application/json")
 		.when()
-			.get("https://api.partaiperindo.com/content/news/partai-perindo-bali-komit-jaga-kamtibmas-jelang-pemilu-2024")
+			.get("https://api.partaiperindo.com/content/news/mantan-dirjen-imigrasi-siap-menjadi-bacaleg-partai-perindo-dapil-sulut")
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -269,7 +269,6 @@ public class partaiperindo {
 		.then()  
 			.statusCode(200)
 		.log().all();	
-		// Test Remote branch deploy
 	}
 }
 
