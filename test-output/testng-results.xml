@@ -2,15 +2,15 @@
 <testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-05T02:43:23 WIB" name="Default suite" finished-at="2023-01-05T02:43:27 WIB" duration-ms="3957">
+  <suite started-at="2023-01-09T16:04:06 WIB" name="Default suite" finished-at="2023-01-09T16:04:09 WIB" duration-ms="2487">
     <groups>
     </groups>
-    <test started-at="2023-01-05T02:43:23 WIB" name="Default test" finished-at="2023-01-05T02:43:27 WIB" duration-ms="3957">
+    <test started-at="2023-01-09T16:04:06 WIB" name="Default test" finished-at="2023-01-09T16:04:09 WIB" duration-ms="2487">
       <class name="PPProd.partaiperindo">
-        <test-method signature="getAksiDetail()[pri:8, instance:PPProd.partaiperindo@40ef3420]" started-at="2023-01-05T02:43:23 WIB" name="getAksiDetail" description="TC 8 Get Detail Aksi/Berita" finished-at="2023-01-05T02:43:27 WIB" duration-ms="3886" status="PASS">
+        <test-method signature="success_login_nonadmin()[pri:1, instance:PPProd.partaiperindo@8dbdac1]" started-at="2023-01-09T16:04:06 WIB" name="success_login_nonadmin" description="TC 1 Login" finished-at="2023-01-09T16:04:09 WIB" duration-ms="2453" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAksiDetail -->
+        </test-method> <!-- success_login_nonadmin -->
       </class> <!-- PPProd.partaiperindo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

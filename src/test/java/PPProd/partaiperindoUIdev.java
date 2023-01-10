@@ -75,8 +75,8 @@ public static WebDriver driver;
 	
 	}
 
-	// TC 23 - Sayap Perindo - Pemuda Perindo
-	@Test (priority=23, description ="TC 23 Open Pemuda Perindo")
+
+	@Test (priority=23, description = "TC 23 Open Pemuda Perindo")
 	public void pemudaPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
@@ -92,7 +92,7 @@ public static WebDriver driver;
 			System.out.println("Child window handle is" + windowhandles);
 				for( String windowHandle:windowhandles){ 
 					driver.switchTo().window(windowHandle); 
-					//test
+					
 				}		
 			String Actual = sayapProd.header_Pemuda(driver).getText();
 			String Expected = "DPP Partai Perindo";
@@ -100,6 +100,7 @@ public static WebDriver driver;
 		assertEquals(Actual, Expected);
 		
 	}
+}
 	
 	
 	
@@ -116,7 +117,7 @@ public static WebDriver driver;
 	}
 	*/
 	
-}
+
 
 	
 
