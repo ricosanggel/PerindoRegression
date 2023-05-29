@@ -147,6 +147,7 @@ public class partaiperindo {
 		given()
 		.headers("Content-Type", "application/json")
 		.params("cache", "true")
+		
 		.when()
 			.get("https://api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntukindonesia")
 		.then()  
@@ -270,6 +271,67 @@ public class partaiperindo {
 			.statusCode(200)
 		.log().all();	
 	}
+	
+	@Test(priority = 21, description = "TC 21 Get list active Polling")	
+	public void getListActivePolling() throws InterruptedException {
+		Response response = (Response)  
+				given()
+				.headers("Content-Type", "application/x-www-form-urlencoded")
+							.accept(ContentType.JSON)
+						.params("number", constant.mobilenumber1)
+						.params("password", constant.password1)
+						.when().
+							post(constant.URLProdLogin)
+						.then().
+							log().all()
+							.extract().response();
+							String jsonString = response.asString();
+							AssertJUnit.assertTrue(jsonString.contains("token"));
+					        //This token will be used in later requests
+							String token = response.jsonPath().getString("token");  
+					
+							Thread.sleep(1000);
+					    given()
+					    .header("authorization", "Bearer " + token)
+						.header("Content-Type", "application/json")
+						.when()
+							.get(constant.URLlistActivePolling)
+						.then()
+							.log().all()
+							.assertThat().statusCode(200);
+						
+	}
+	@Test(priority = 22, description = "TC 22 Get list event by date")	
+	public void getListByDate() throws InterruptedException {
+		Response response = (Response)  
+				given()
+				.headers("Content-Type", "application/x-www-form-urlencoded")
+							.accept(ContentType.JSON)
+						.params("number", constant.mobilenumber1)
+						.params("password", constant.password1)
+						.when().
+							post(constant.URLProdLogin)
+						.then().
+							log().all()
+							.extract().response();
+							String jsonString = response.asString();
+							AssertJUnit.assertTrue(jsonString.contains("token"));
+					        //This token will be used in later requests
+							String token = response.jsonPath().getString("token");  
+					
+							Thread.sleep(1000);
+					    given()
+					    .header("authorization", "Bearer " + token)
+						.header("Content-Type", "application/json")
+						.when()
+							.get(constant.URLlistEventByDate)
+						.then()
+							.log().all()
+							.assertThat().statusCode(200);
+	}
+						
+	
+	
 }
 
 	

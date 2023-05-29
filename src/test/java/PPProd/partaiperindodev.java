@@ -18,14 +18,92 @@ public class partaiperindodev {
 		given().
 			headers("Content-Type", "application/x-www-form-urlencoded").
 			accept(ContentType.JSON)
-		.params("number", constantdev.mobilenumber1 )
+		.params("number", constantdev.Devmobilenumber1 )
 		.params("password", constantdev.Devpassword1)
 		.when().
 			post(constantdev.URLDevLogin)
 		.then().
 			log().all()
 			.assertThat().statusCode(201)
-			.body("phone_number", Matchers.equalTo("+6281223257356"))
+			.body("phone_number", Matchers.equalTo("+6285719694711"))
+			.extract().response();
+		
+	}
+	@Test (priority=1, description="Login as Dprt")	
+	public void success_login_dprt_() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.Devdprtmanadomobilenumber )
+		.params("password", constantdev.Devpassword1)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
+	
+	@Test (priority=1, description="Login as Saksi")	
+	public void success_login_saksi() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.Devsaksimanadomobilenumber )
+		.params("password", constantdev.Devpassword1)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
+	
+	@Test (priority=1, description="Login as admin")	
+	public void success_login_admin_cms() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.Devadmin )
+		.params("password", constantdev.Devadminpassowrd)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
+	
+	@Test (priority=1, description="Login as caleg")	
+	public void success_login_caleg() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.Devcaleg )
+		.params("password", constantdev.Devcalegpassword)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
+	@Test (priority=1, description="Login as koordinator")	
+	public void success_login_koordinator() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.Devkoordinator )
+		.params("password", constantdev.Devkoorpass)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
 			.extract().response();
 		
 	}
@@ -113,7 +191,7 @@ public class partaiperindodev {
 		given()
 		.headers("Content-Type", "application/json")
 		.when()
-			.get("https://api.partaiperindo.com/content/news/partai-perindo-bali-komit-jaga-kamtibmas-jelang-pemilu-2024")
+			.get("https://dev-api.partaiperindo.com/content/news/partai-perindo-bali-komit-jaga-kamtibmas-jelang-pemilu-2024")
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -123,7 +201,7 @@ public class partaiperindodev {
 		given()
 		.headers("Content-Type", "application/json")
 		.when()
-			.get("https://api.partaiperindo.com/content/news/partai-perindo-bali-komit-jaga-kamtibmas-jelang-pemilu-")
+			.get("https://dev-api.partaiperindo.com/content/news/partai-perindo-bali-komit-jaga-kamtibmas-jelang-pemilu-")
 		.then()  
 			.statusCode(404)
 		.log().all();
@@ -148,7 +226,7 @@ public class partaiperindodev {
 		.headers("Content-Type", "application/json")
 		.params("cache", "true")
 		.when()
-			.get("https://api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntukindonesia")
+			.get("https://dev-api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntukindonesia")
 		.then()  
 			.assertThat().statusCode(200)
 			.body("slug", Matchers.equalTo("kompetisi-digital-aksi-nyata-darikamuuntukindonesia"))
@@ -160,7 +238,7 @@ public class partaiperindodev {
 		.headers("Content-Type", "application/json")
 		.params("cache", "true")
 		.when()
-			.get("https://api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntu")
+			.get("https://dev-api.partaiperindo.com/content/event/kompetisi-digital-aksi-nyata-darikamuuntu")
 		.then()  
 			.statusCode(404)
 		.log().all();
@@ -172,7 +250,7 @@ public class partaiperindodev {
 		given()
 		.headers("Content-Type", "application/x-www-form-urlencoded")
 					.accept(ContentType.JSON)
-				.params("number", constantdev.mobilenumber1)
+				.params("number", constantdev.Devmobilenumber1)
 				.params("password", constantdev.Devpassword1)
 				.when().
 					post(constantdev.URLDevLogin)
@@ -193,7 +271,7 @@ public class partaiperindodev {
 				.then()
 					.log().all()
 					.assertThat().statusCode(200)
-					.body("member_no", Matchers.equalTo("1605022206050001"));
+					.body("member_no", Matchers.equalTo("1213139812250001"));
 	}	
 	@Test (priority=14, description ="TC 14 Get List all Aspirasi")	
 	public void listaspirasi() {
@@ -223,7 +301,7 @@ public class partaiperindodev {
 		.headers("Content-Type", "application/json")
 		.params("cache", "true")
 		.when()
-			.get("https://api.partaiperindo.com/content/about?type=embed")
+			.get("https://dev-api.partaiperindo.com/content/about?type=embed")
 		.then()  
 			.statusCode(200)
 		.log().all();
@@ -243,7 +321,7 @@ public class partaiperindodev {
 	public void bannerMobileApps() {
 		given()
 		.headers("Content-Type", "application/json")
-		.params("banner_id", "6")
+		.params("banner_id", "20")
 		.when()
 			.get(constantdev.URLDevBannerMobileapps)
 		.then()  
@@ -269,7 +347,63 @@ public class partaiperindodev {
 		.then()  
 			.statusCode(200)
 		.log().all();	
-	
+	}
+	@Test(priority = 21, description = "TC 21 Get list active Polling")	
+	public void getListActivePolling() throws InterruptedException {
+		Response response = (Response)  
+				given()
+				.headers("Content-Type", "application/x-www-form-urlencoded")
+							.accept(ContentType.JSON)
+						.params("number", constantdev.Devmobilenumber1)
+						.params("password", constantdev.Devpassword1)
+						.when().
+							post(constantdev.URLDevLogin)
+						.then().
+							log().all()
+							.extract().response();
+							String jsonString = response.asString();
+							AssertJUnit.assertTrue(jsonString.contains("token"));
+					        //This token will be used in later requests
+							String token = response.jsonPath().getString("token");  
+					
+							Thread.sleep(1000);
+					    given()
+					    .header("authorization", "Bearer " + token)
+						.header("Content-Type", "application/json")
+						.when()
+							.get(constantdev.URLDevListPollingActive)
+						.then()
+							.log().all()
+							.assertThat().statusCode(200);
+						
+	}
+	@Test(priority = 22, description = "TC 22 Get list event by date")	
+	public void getListByDate() throws InterruptedException {
+		Response response = (Response)  
+				given()
+				.headers("Content-Type", "application/x-www-form-urlencoded")
+							.accept(ContentType.JSON)
+						.params("number", constantdev.Devmobilenumber1)
+						.params("password", constantdev.Devpassword1)
+						.when().
+							post(constantdev.URLDevLogin)
+						.then()
+						.log().all()
+							.extract().response();
+							String jsonString = response.asString();
+							AssertJUnit.assertTrue(jsonString.contains("token"));
+					        //This token will be used in later requests
+							String token = response.jsonPath().getString("token");  
+					
+							Thread.sleep(1000);
+					    given()
+					    .header("authorization", "Bearer " + token)
+						.header("Content-Type", "application/json")
+						.when()
+							.get(constantdev.URLDevListEventByDate)
+						.then()
+							.log().all()
+							.assertThat().statusCode(200);
 	}
 }
 

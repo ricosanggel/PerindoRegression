@@ -13,7 +13,8 @@ public class constant {
 	public static final String URLProdForgotPass = "https://api.partaiperindo.com/auth/forgotpassword";
 	public static final String URLProdOTP = "https://api.partaiperindo.com/auth/otp";
 	public static final String URLProdSearch = "https://api.partaiperindo.com/content/search";
-	
+	public static final String URLlistActivePolling = "https://api.partaiperindo.com/content/listactivepolling?limit=10&page=1";
+	public static final String URLlistEventByDate = "https://api.partaiperindo.com/content/listeventbydate?limit=10&page=1&date_filter=2023-01-26";
 	
 	    
 
