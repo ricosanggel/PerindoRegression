@@ -25,7 +25,7 @@ public class partaiperindodev {
 		.then().
 			log().all()
 			.assertThat().statusCode(201)
-			.body("phone_number", Matchers.equalTo("+6285719694711"))
+			.body("phone_number", Matchers.equalTo("+6288110930201"))
 			.extract().response();
 		
 	}
