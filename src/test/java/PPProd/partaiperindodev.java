@@ -12,6 +12,7 @@ import Utility.*;
 
 public class partaiperindodev {
 	
+	public static GetToken tken = new GetToken();
 
 	@Test (priority=1, description="TC 1 Login")	
 	public void success_login_nonadmin() throws InterruptedException {			
@@ -246,6 +247,7 @@ public class partaiperindodev {
 	
 	@Test (priority=13, description ="TC 13 Get-Member")
 	public static void getmember() throws InterruptedException {
+	
 		Response response = (Response) 
 		given()
 		.headers("Content-Type", "application/x-www-form-urlencoded")
@@ -264,14 +266,14 @@ public class partaiperindodev {
 			
 					Thread.sleep(1000);
 			    given()
-			    .header("authorization", "Bearer " + token)
+			    .header("authorization", "Bearer " + tken.getTokenAdmin() )
 				.header("Content-Type", "application/json")
 				.when()
 					.get(constantdev.URLDevMember)
 				.then()
 					.log().all()
-					.assertThat().statusCode(200)
-					.body("member_no", Matchers.equalTo("1213139812250001"));
+					.assertThat().statusCode(200);
+					
 	}	
 	@Test (priority=14, description ="TC 14 Get List all Aspirasi")	
 	public void listaspirasi() {

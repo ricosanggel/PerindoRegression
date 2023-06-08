@@ -5,7 +5,7 @@
     <classes>
       <class name="PPProd.partaiperindodev">
         <methods>
-          <include name="success_login_nonadmin"/>
+          <include name="getmember"/>
         </methods>
       </class> <!-- PPProd.partaiperindodev -->
     </classes>
