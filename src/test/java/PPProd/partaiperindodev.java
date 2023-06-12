@@ -26,7 +26,7 @@ public class partaiperindodev {
 		.then().
 			log().all()
 			.assertThat().statusCode(201)
-			.body("phone_number", Matchers.equalTo("+6288110930201"))
+			.body("phone_number", Matchers.equalTo("+6288210193740"))
 			.extract().response();
 		
 	}
@@ -100,6 +100,22 @@ public class partaiperindodev {
 			accept(ContentType.JSON)
 		.params("number", constantdev.Devkoordinator )
 		.params("password", constantdev.Devkoorpass)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
+	
+	@Test (priority=1, description="Login as recruiter")	
+	public void success_login_recruiter() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.DevRecruiter )
+		.params("password", constantdev.DevRecPass)
 		.when().
 			post(constantdev.URLDevLogin)
 		.then().
@@ -248,23 +264,6 @@ public class partaiperindodev {
 	@Test (priority=13, description ="TC 13 Get-Member")
 	public static void getmember() throws InterruptedException {
 	
-		Response response = (Response) 
-		given()
-		.headers("Content-Type", "application/x-www-form-urlencoded")
-					.accept(ContentType.JSON)
-				.params("number", constantdev.Devmobilenumber1)
-				.params("password", constantdev.Devpassword1)
-				.when().
-					post(constantdev.URLDevLogin)
-				.then().
-					log().all()
-					.extract().response();
-					String jsonString = response.asString();
-					AssertJUnit.assertTrue(jsonString.contains("token"));
-			        //This token will be used in later requests
-					String token = response.jsonPath().getString("token");  
-			
-					Thread.sleep(1000);
 			    given()
 			    .header("authorization", "Bearer " + tken.getTokenAdmin() )
 				.header("Content-Type", "application/json")
