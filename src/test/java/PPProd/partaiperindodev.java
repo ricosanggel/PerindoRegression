@@ -26,7 +26,7 @@ public class partaiperindodev {
 		.then().
 			log().all()
 			.assertThat().statusCode(201)
-			.body("phone_number", Matchers.equalTo("+6288210193740"))
+			.body("phone_number", Matchers.equalTo("+6288210193164"))
 			.extract().response();
 		
 	}
@@ -46,21 +46,6 @@ public class partaiperindodev {
 		
 	}
 	
-	@Test (priority=1, description="Login as Saksi")	
-	public void success_login_saksi() throws InterruptedException {			
-		given().
-			headers("Content-Type", "application/x-www-form-urlencoded").
-			accept(ContentType.JSON)
-		.params("number", constantdev.Devsaksimanadomobilenumber )
-		.params("password", constantdev.Devpassword1)
-		.when().
-			post(constantdev.URLDevLogin)
-		.then().
-			log().all()
-			.assertThat().statusCode(201)
-			.extract().response();
-		
-	}
 	
 	@Test (priority=1, description="Login as admin")	
 	public void success_login_admin_cms() throws InterruptedException {			
@@ -125,6 +110,21 @@ public class partaiperindodev {
 		
 	}
 	
+	@Test (priority=1, description="Login as Saksi New Process")	
+	public void success_login_saksi() throws InterruptedException {			
+		given().
+			headers("Content-Type", "application/x-www-form-urlencoded").
+			accept(ContentType.JSON)
+		.params("number", constantdev.DevSaksi )
+		.params("password", constantdev.DevSaksiPass)
+		.when().
+			post(constantdev.URLDevLogin)
+		.then().
+			log().all()
+			.assertThat().statusCode(201)
+			.extract().response();
+		
+	}
 	
 	@Test (priority=2, description="TC 2 Invalid Password when login")	
 	public void failed_login_invalidpassword() throws InterruptedException {
