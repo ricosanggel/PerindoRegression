@@ -10,7 +10,7 @@ public class constantdev {
 	public static final String Devdprtklpgadingnumber = "+6288811133450";
 	public static final String Devsaksimanadomobilenumber = "+6281159379165 ";
 	public static final String Devdprt2mobilenumber = "+6288811133669";
-	public static final String Devadmin = "+6288811133716";
+	public static final String Devadmin = "+6281223257158";
 	public static final String Devadminpassowrd = "ric123";
 	public static final String Devcaleg = "+6288811133398";
 	public static final String Devcalegpassword = "ric123";
