@@ -30,7 +30,7 @@ public class sayapProd {
 	}
 	public static WebElement header_Kartini(WebDriver driver) {
 		////*[@id=\"sc_blogger_545366807\"]/h2
-		element = driver.findElement(By.xpath("/html/body/div[1]/div/div[6]/div/div/div/p/a"));
+		element = driver.findElement(By.xpath("//*[@id=\"sc_blogger_545366807\"]/h2"));
 		return element;
 	}
 	public static WebElement header_Pemuda(WebDriver driver) {

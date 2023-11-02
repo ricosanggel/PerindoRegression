@@ -10,7 +10,7 @@
 	<dependency>
     	<groupId>org.seleniumhq.selenium</groupId>
     	<artifactId>selenium-java</artifactId>
-    	<version>4.0.0</version>
+    	<version>4.8.3</version>
 	</dependency>
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependency>
@@ -64,7 +64,15 @@
     <version>3.0.0</version>
     <scope>test</scope>
 </dependency>
+
+<dependency>
+  <groupId>io.github.bonigarcia</groupId>
+  <artifactId>webdrivermanager</artifactId>
+  <version>5.1.0</version>
+</dependency>
  </dependencies>
+ 
+
  
  <build>
  <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->

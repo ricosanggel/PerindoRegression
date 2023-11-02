@@ -3,7 +3,7 @@ package Utility;
 public class constantdev {
 	
 	//Mobile Number
-	public static final String Devmobilenumber1 = "+6288210193164";
+	public static final String Devmobilenumber1 = "+6288210193067";
 	public static final String Devdprtmobilenumber = "+6288811133453";
 	public static final String Devsaksimobilenumber = "+6288811133452";
 	public static final String Devdprtmanadomobilenumber = "+6281159379061";
@@ -12,14 +12,14 @@ public class constantdev {
 	public static final String Devdprt2mobilenumber = "+6288811133669";
 	public static final String Devadmin = "+6281223257158";
 	public static final String Devadminpassowrd = "ric123";
-	public static final String Devcaleg = "+6281223257356";
-	public static final String Devcalegpassword = "ric123";
+	public static final String Devcaleg = "+6288210193067";
+	public static final String Devcalegpassword = "ric12345";
 	public static final String Devkoordinator = "+6288811133682";
 	public static final String Devkoorpass = "ric123";
 	public static final String DevRecruiter = "+6281159379061";
-	public static final String DevSaksi = "+6288210193067";
+	public static final String DevSaksi = "+6285266660982";
 	public static final String DevRecPass = "ric123";
-	public static final String DevSaksiPass = "ric123";
+	public static final String DevSaksiPass = "david123";
 	//Password
 	public static final String Devpassword1 = "ric123";
 	public static final String Devdprtpassword = "ric12345";

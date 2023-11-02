@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PPProd.partaiperindodev">
+      <class name="PPProd.partaiperindo">
         <methods>
-          <include name="success_login_caleg"/>
+          <include name="success_login_nonadmin"/>
         </methods>
-      </class> <!-- PPProd.partaiperindodev -->
+      </class> <!-- PPProd.partaiperindo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
