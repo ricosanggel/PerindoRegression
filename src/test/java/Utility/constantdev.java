@@ -12,12 +12,12 @@ public class constantdev {
 	public static final String Devdprt2mobilenumber = "+6288811133669";
 	public static final String Devadmin = "+6281223257158";
 	public static final String Devadminpassowrd = "ric123";
-	public static final String Devcaleg = "+6288811133398";
+	public static final String Devcaleg = "+6281223257356";
 	public static final String Devcalegpassword = "ric123";
 	public static final String Devkoordinator = "+6288811133682";
 	public static final String Devkoorpass = "ric123";
-	public static final String DevRecruiter = "+6288210193164";
-	public static final String DevSaksi = "+6288210193180";
+	public static final String DevRecruiter = "+6281159379061";
+	public static final String DevSaksi = "+6288210193067";
 	public static final String DevRecPass = "ric123";
 	public static final String DevSaksiPass = "ric123";
 	//Password

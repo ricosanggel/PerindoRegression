@@ -99,7 +99,7 @@ public class partaiperindodev {
 		given().
 			headers("Content-Type", "application/x-www-form-urlencoded").
 			accept(ContentType.JSON)
-		.params("number", constantdev.DevRecruiter )
+		.params("number"	, constantdev.DevRecruiter )
 		.params("password", constantdev.DevRecPass)
 		.when().
 			post(constantdev.URLDevLogin)
