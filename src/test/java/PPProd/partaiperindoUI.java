@@ -27,7 +27,7 @@ public WebDriver driver;
 	public void setUpTest() {
 		
 		//Set-ChromeDriver Path
-		String driverPath = "C:\\Users\\ProBook\\Downloads\\chromedriver-win64\\chromedriver.exe";
+		String driverPath = "C:\\Users\\ProBook\\Downloads\\chromedriver123\\chromedriver-win64";
 		
 //		String OS = System.getProperty("os.name");
 //		

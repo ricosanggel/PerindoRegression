@@ -177,7 +177,7 @@ public class partaiperindo {
 	@Test (priority=13, description ="TC 13 Get-Member")
 	public static void getMember() throws InterruptedException {
 		 given()
-		.header("authorization", "Bearer " + tken.getProdToken())
+		.header("authorization", "Bearer " + tken.getMemberProdToken())
 		.header("Content-Type", "application/json")
 		.when()
 			.get("https://api.partaiperindo.com/member/profile")
@@ -271,7 +271,7 @@ public class partaiperindo {
 	@Test(priority = 21, description = "TC 21 Get list active Polling")	
 	public void getListActivePolling() throws InterruptedException {
 	    given()
-	    .header("authorization", "Bearer " + tken.getProdToken())
+	    .header("authorization", "Bearer " + tken.getMemberProdToken())
 		.header("Content-Type", "application/json")
 		.when()
 			.get(constant.URLlistActivePolling)
@@ -285,10 +285,10 @@ public class partaiperindo {
 	@Test(priority = 22, description = "TC 22 Get list event by date")	
 	public void getListByDate() throws InterruptedException {
 		 given()
-		    .header("authorization", "Bearer " + tken.getProdToken())
+		    .header("authorization", "Bearer TGa9vE_vp00U1aKGRjFYLrJhlimdvVw4Ysi6w4B_6NE=")
 			.header("Content-Type", "application/json")
 			.when()
-				.get(constant.URLlistEventByDate)
+				.get(constant.URLTestLuru)
 			.then()
 				.log().all()
 				.assertThat().statusCode(200);	

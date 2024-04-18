@@ -254,7 +254,7 @@ public class partaiperindodev {
 	@Test (priority=13, description ="TC 13 Get-Member")
 	public static void getmember() throws InterruptedException {
 		 given()
-		    .header("authorization", "Bearer " + tken.getTokenAdmin() )
+		    .header("authorization", "Bearer " + tken.getDevTokenAdmin() )
 			.header("Content-Type", "application/json")
 			.when()
 				.get(constantdev.URLDevMember)
@@ -369,7 +369,9 @@ public class partaiperindodev {
 	    	.then()
 				.log().all()
 					.assertThat().statusCode(200);
+	
 	}
+
 }
 
 	

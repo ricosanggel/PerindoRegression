@@ -1,17 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-02T16:23:40 WIB" name="Default suite" finished-at="2023-11-02T16:23:45 WIB" duration-ms="5449">
+  <suite started-at="2024-04-05T12:48:39 WIB" name="Default suite" finished-at="2024-04-05T12:48:40 WIB" duration-ms="281">
     <groups>
     </groups>
-    <test started-at="2023-11-02T16:23:40 WIB" name="Default test" finished-at="2023-11-02T16:23:45 WIB" duration-ms="5449">
+    <test started-at="2024-04-05T12:48:39 WIB" name="Default test" finished-at="2024-04-05T12:48:40 WIB" duration-ms="281">
       <class name="PPProd.partaiperindoUI">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:PPProd.partaiperindoUI@158d2680]" started-at="2023-11-02T16:23:40 WIB" name="setUpTest" finished-at="2023-11-02T16:23:44 WIB" duration-ms="4397" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:PPProd.partaiperindoUI@a514af7]" started-at="2024-04-05T12:48:39 WIB" name="setUpTest" finished-at="2024-04-05T12:48:40 WIB" duration-ms="236" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'RICO', ip: '192.168.1.8'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'RICO', ip: '192.168.1.8'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at PPProd.partaiperindoUI.setUpTest(partaiperindoUI.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\ProBook\Downloads\chromedriver123\chromedriver-win64": CreateProcess error=5, Access is denied
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 31 more
+Caused by: java.io.IOException: Cannot run program "C:\Users\ProBook\Downloads\chromedriver123\chromedriver-win64": CreateProcess error=5, Access is denied
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 34 more
+Caused by: java.io.IOException: CreateProcess error=5, Access is denied
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:492)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="PetunjukArah()[pri:21, instance:PPProd.partaiperindoUI@158d2680]" started-at="2023-11-02T16:23:44 WIB" name="PetunjukArah" description="TC 21 Petunjuk Arah" finished-at="2023-11-02T16:23:45 WIB" duration-ms="1011" status="PASS">
+        <test-method signature="PetunjukArah()[pri:21, instance:PPProd.partaiperindoUI@a514af7]" started-at="2024-04-05T12:48:40 WIB" name="PetunjukArah" description="TC 21 Petunjuk Arah" finished-at="2024-04-05T12:48:40 WIB" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'RICO', ip: '192.168.1.8'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'RICO', ip: '192.168.1.8'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at PPProd.partaiperindoUI.setUpTest(partaiperindoUI.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\ProBook\Downloads\chromedriver123\chromedriver-win64": CreateProcess error=5, Access is denied
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+... 31 more
+Caused by: java.io.IOException: Cannot run program "C:\Users\ProBook\Downloads\chromedriver123\chromedriver-win64": CreateProcess error=5, Access is denied
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 34 more
+Caused by: java.io.IOException: CreateProcess error=5, Access is denied
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:492)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PetunjukArah -->

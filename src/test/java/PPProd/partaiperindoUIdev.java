@@ -34,7 +34,7 @@ public static WebDriver driver;
 		}
 		
 		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(true);
+		
 		driver = new ChromeDriver(options);
 			
 	}
@@ -55,7 +55,7 @@ public static WebDriver driver;
 	public void kartiniPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(true);
+		
 		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
@@ -80,7 +80,7 @@ public static WebDriver driver;
 	public void pemudaPerindo() throws InterruptedException {
 		
 		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(true);
+		
 		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
